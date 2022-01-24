@@ -27,7 +27,7 @@ pipeline {
     }
     stage('git checkout'){
         setps{
-            https:'//github.com/Akshyanshalenka/GitJava.git'
+            git 'https://github.com/Akshyanshalenka/kubernetes.git''
         }
     }
 }
