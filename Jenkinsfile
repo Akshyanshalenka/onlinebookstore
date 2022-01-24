@@ -25,10 +25,6 @@ pipeline {
             mail bcc: 'job status', body: 'added email', cc: '', from: '', replyTo: '', subject: '', to: 'akshyanshal@gmail.com'
         }
     }
-    stage('git checkout'){
-        setps{
-            git 'https://github.com/Akshyanshalenka/GitJava.git'
-        }
-    }
+    
 }
 }
