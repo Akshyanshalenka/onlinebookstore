@@ -25,6 +25,10 @@ pipeline {
             mail bcc: 'job status', body: 'added email', cc: '', from: '', replyTo: '', subject: '', to: 'akshyanshal@gmail.com'
         }
     }
-    
+    stage('added modified file'){
+        steps{
+            git 'https://github.com/Akshyanshalenka/onlinebookstore.git'
+        }
+    }
 }
 }
