@@ -20,5 +20,15 @@ pipeline {
             echo "Testing start App"
         }
     }
+    stage('email notification'){
+        steps {
+            mail bcc: '', body: 'sample email for testing', cc: '', from: '', replyTo: '', subject: 'job status', to: 'akshyanshal@gmail.com'
+        }
+    }
+    stage('git checkout'){
+        setps{
+            git 'https://github.com/Akshyanshalenka/kubernetes.git'
+        }
+    }
 }
 }
