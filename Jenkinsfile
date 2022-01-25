@@ -22,7 +22,7 @@ pipeline {
     }
     stage('email notification'){
         steps {
-            mail bcc: 'job status', body: 'added email', cc: '', from: '', replyTo: '', subject: '', to: 'akshyanshal@gmail.com'
+         mail bcc: '', body: 'adding email test', cc: '', from: '', replyTo: '', subject: 'job status', to: 'akshyanshal@gmail.com'
         }
     }
     stage('added modified file'){
